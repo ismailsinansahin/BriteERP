@@ -1,0 +1,788 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-14T07:20:42.378Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Users should be able to login with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996500,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter valid credentials \"salesmanager16@info.com\" \"salesmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salesmanager16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"salesmanager\"",
+                  "offset": 59
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@PositiveLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.450Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Users should be able to login with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter valid credentials \"posmanager16@info.com\" \"posmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"posmanager16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"posmanager\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@PositiveLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.458Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Users should be able to login with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter valid credentials \"imm16@info.com\" \"inventorymanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"imm16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"inventorymanager\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@PositiveLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.470Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Users should be able to login with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1995900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter valid credentials \"expensesmanager16@info.com\" \"expensesmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"expensesmanager16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"expensesmanager\"",
+                  "offset": 62
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@PositiveLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.484Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Users should be able to login with valid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996800,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user enter valid credentials \"manuf_user16@info.com\" \"manufuser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"manuf_user16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"manufuser\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@PositiveLogin"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.494Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Try to login with invalid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 998800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "the user enter wrong credentials \"wrongUsername\" \"posmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrongUsername\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"posmanager\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_wrong_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "the user should see wrong message \"Wrong login/password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong login/password\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_wrong_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@NegativeLogin"
+          },
+          {
+            "name": "@WrongCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.511Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Try to login with invalid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "the user enter wrong credentials \"posmanager16@info.com\" \"wrongPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"posmanager16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"wrongPassword\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_wrong_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "the user should see wrong message \"Wrong login/password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wrong login/password\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_wrong_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@NegativeLogin"
+          },
+          {
+            "name": "@WrongCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.520Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Try to login with invalid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the user enter blank credentials \"blank\" \"posmanager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"blank\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"posmanager\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 995900,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "the user should see blank message \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@NegativeLogin"
+          },
+          {
+            "name": "@BlankCredentials"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-14T07:20:42.545Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Try to login with invalid credentials",
+        "description": "",
+        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the user enter blank credentials \"posmanager16@info.com\" \"blank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"posmanager16@info.com\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"blank\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "click on Login Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "the user should see blank message \"Please fill out this field.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please fill out this field.\"",
+                  "offset": 34
+                }
+              ],
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@NegativeLogin"
+          },
+          {
+            "name": "@BlankCredentials"
+          }
+        ]
+      }
+    ],
+    "name": "As a user I should be able to login to the application",
+    "description": "  Description: The purpose of this feature is to test the login functionality",
+    "id": "as-a-user-i-should-be-able-to-login-to-the-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
