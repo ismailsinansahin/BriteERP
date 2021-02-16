@@ -1,5 +1,6 @@
 @Login
-Feature: As a user I should be able to login with valid credentials
+Feature: Positive Login
+  Agile Story: As a user I should be able to login with valid credentials
   Description: The purpose of this feature is to test the login functionality
 
   @PositiveLogin

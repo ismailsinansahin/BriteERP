@@ -1,5 +1,6 @@
 @UserModules
-Feature: As a user I should be able to go to any module I have right to access on the top menu
+Feature: Module Links
+  Agile Story: As a user I should be able to go to any module I have right to access on the top menu
   Description: The purpose of this feature is to test if users can go all modules they are supposed to see
 
   Scenario Outline: Users should be able to login with valid credentials

@@ -1,5 +1,6 @@
 @Dashboard
-Feature: As a user I should be able to see my username on the top menu
+Feature: Username Functionality
+  Agile Story: As a user I should be able to see my username on the top menu
   Description: The purpose of this feature is to test the username functionality on the top menu
 
   @Username
