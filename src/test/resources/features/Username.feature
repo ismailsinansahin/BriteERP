@@ -1,9 +1,8 @@
-@Dashboard
+@Dashboard @Username
 Feature: Username Functionality
   Agile Story: As a user I should be able to see my username on the top menu
   Description: The purpose of this feature is to test the username functionality on the top menu
 
-  @Username
   Scenario Outline: Users should be able to see their usernames on the top menu
     When the user enter valid credentials "<Username>" "<Password>"
     And click on login button

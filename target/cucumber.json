@@ -3,92 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-14T07:20:42.378Z",
+        "start_timestamp": "2021-02-17T08:34:44.991Z",
         "before": [
           {
             "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "Users should be able to login with valid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 996500,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "the user enter valid credentials \"salesmanager16@info.com\" \"salesmanager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"salesmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"salesmanager\"",
-                  "offset": 59
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@PositiveLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.450Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 5280954100,
+              "status": "passed"
             },
             "match": {
               "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
@@ -98,12 +18,19 @@
         "line": 13,
         "name": "Users should be able to login with valid credentials",
         "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;3",
+        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;2",
         "after": [
           {
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABVYAAAJlCAYAAAAxcKmfAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XmUZVlZ5/3vs8+5U0w5Z2XN80ANTAWFIijQligqtBOiti7sdnhVFFyiiKhtt0i/ar+24kTr++rqxmXTzqtsFIuyUKCoAixKoCZqriIzK6eYI+549n7eP869EZGZEZl5c4rIqt9nrZuRce8+5+xzbvz1W89+ttXrdUdERERERERERERETlgOcMEFF6z3PERERERERERERETOCXv37iWs9yREREREREREREREzjUKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEgKVkVERERERERERESGpGBVREREREREREREZEhWr9d9vSchIiIiIiIiIiIici6xTqejYFXkLLj33nu5+eab13saIiIiIiIiIiJyGqgVgIiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnBqoiIiIiIiIiIiMiQFKyKiIiIiIiIiIiIDEnB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AACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgkrAIAAAAAVBJWAQAAAAAqCasAAAAAAJWEVQAAAACASsIqAAAAAEAlYRUAAAAAoJKwCgAAAABQSVgFAAAAAKgk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\u003d\u003d",
+                "mime_type": "image/png",
+                "name": "screenshot"
+              }
+            ],
             "result": {
-              "duration": 997300,
-              "status": "skipped"
+              "duration": 2906327900,
+              "status": "passed"
             },
             "match": {
               "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
@@ -115,7 +42,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 154103600,
+              "status": "passed"
             },
             "line": 7,
             "name": "the user enter valid credentials \"posmanager16@info.com\" \"posmanager\"",
@@ -136,651 +64,66 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2419766200,
+              "status": "passed"
             },
             "line": 8,
-            "name": "click on Login Button",
-            "match": {},
+            "name": "click on login button",
+            "match": {
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "error_message": "java.lang.AssertionError: expected:\u003c[Discuss, Calendar, Notes, Contacts, CRM, Sales, Website, Point of Sale, Purchases, Inventory, Manufacturing, Repairs, Project, Events, Surveys, Employees, Attendances, Leaves, Expenses, Maintenance, Fleet, Dashboards]\u003e but was:\u003c[, , , , , , , , , , , , , , , , , , , , , ]\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:120)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.smlsnnshn.pages.DashboardPage.verifyModuleNamesBasedOnUserTypes(DashboardPage.java:58)\r\n\tat com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(UserModulesStepDefs.java:12)\r\n\tat ✽.the user should be able to see related modules based on \"posmanager16@info.com\"(file:///C:/Users/A/IdeaProjects/BriteERP/src/test/resources/features/UserModules.feature:9)\r\n",
+              "duration": 249940500,
+              "status": "failed"
             },
             "line": 9,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@PositiveLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.458Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Users should be able to login with valid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;4",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "the user enter valid credentials \"imm16@info.com\" \"inventorymanager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"imm16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"inventorymanager\"",
-                  "offset": 50
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@PositiveLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.470Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Users should be able to login with valid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;5",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1995900,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "the user enter valid credentials \"expensesmanager16@info.com\" \"expensesmanager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"expensesmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"expensesmanager\"",
-                  "offset": 62
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 997500,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@PositiveLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.484Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Users should be able to login with valid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;users-should-be-able-to-login-with-valid-credentials;;6",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 996800,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "the user enter valid credentials \"manuf_user16@info.com\" \"manufuser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"manuf_user16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"manufuser\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "the user should be able to login",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@PositiveLogin"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.494Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "Try to login with invalid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 998800,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "the user enter wrong credentials \"wrongUsername\" \"posmanager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wrongUsername\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"posmanager\"",
-                  "offset": 49
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_wrong_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 999800,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "the user should see wrong message \"Wrong login/password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Wrong login/password\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_wrong_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@NegativeLogin"
-          },
-          {
-            "name": "@WrongCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.511Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Try to login with invalid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1002000,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "the user enter wrong credentials \"posmanager16@info.com\" \"wrongPassword\"",
+            "name": "the user should be able to see related modules based on \"posmanager16@info.com\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"posmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"wrongPassword\"",
-                  "offset": 57
+                  "offset": 56
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_wrong_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "the user should see wrong message \"Wrong login/password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Wrong login/password\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_wrong_message(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
+            "name": "@Dashboard"
           },
           {
-            "name": "@NegativeLogin"
-          },
-          {
-            "name": "@WrongCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.520Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 36,
-        "name": "Try to login with invalid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1000500,
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "the user enter blank credentials \"blank\" \"posmanager\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"blank\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"posmanager\"",
-                  "offset": 41
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 31,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 995900,
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "the user should see blank message \"Please fill out this field.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Please fill out this field.\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@NegativeLogin"
-          },
-          {
-            "name": "@BlankCredentials"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-14T07:20:42.545Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "Try to login with invalid credentials",
-        "description": "",
-        "id": "as-a-user-i-should-be-able-to-login-to-the-application;try-to-login-with-invalid-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "the user enter blank credentials \"posmanager16@info.com\" \"blank\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"posmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"blank\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 31,
-            "name": "click on Login Button",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "the user should see blank message \"Please fill out this field.\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Please fill out this field.\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@NegativeLogin"
-          },
-          {
-            "name": "@BlankCredentials"
+            "name": "@UserModules"
           }
         ]
       }
     ],
-    "name": "As a user I should be able to login to the application",
-    "description": "  Description: The purpose of this feature is to test the login functionality",
-    "id": "as-a-user-i-should-be-able-to-login-to-the-application",
+    "name": "Modules Names",
+    "description": "  Agile Story: As a user I should be able to see all modules which I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can see all modules they are supposed to see",
+    "id": "modules-names",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/UserModules.feature",
     "tags": [
       {
-        "name": "@Login",
+        "name": "@Dashboard",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@UserModules",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
         }
       }
     ]

@@ -1,9 +1,9 @@
-@Login
+@Login @NegativeLogin
 Feature: Negative Login
   Agile Story: As a user I should not be able to login with invalid credentials
   Description: The purpose of this feature is to test the login functionality (Negative Test)
 
-  @NegativeLogin @WrongCredentials
+  @WrongCredentials
   Scenario Outline: Users should not be able to login with wrong credentials
     When the user enter wrong credentials "<Username>" "<Password>"
     And click on login button
@@ -13,7 +13,7 @@ Feature: Negative Login
       | wrongUsername         | posmanager    | Wrong login/password        |
       | posmanager16@info.com | wrongPassword | Wrong login/password        |
 
-  @NegativeLogin @BlankCredentials
+  @BlankCredentials
   Scenario Outline: Users should not be able to login with blank credentials
     When the user enter blank credentials "<Username>" "<Password>"
     And click on login button
