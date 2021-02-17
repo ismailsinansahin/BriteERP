@@ -1,12 +1,12 @@
-@Dashboard @UserModules
-Feature: Modules Names
-  Agile Story: As a user I should be able to see all modules which I have right to access on the top menu
-  Description: The purpose of this feature is to test if users can see all modules they are supposed to see
+@Login @PositiveLogin
+Feature: Positive Login
+  Agile Story: As a user I should be able to login with valid credentials
+  Description: The purpose of this feature is to test the login functionality
 
   Scenario Outline: Users should be able to login with valid credentials
     When the user enter valid credentials "<Username>" "<Password>"
     And click on login button
-    Then the user should be able to see related modules based on "<Username>"
+    Then the user should be able to login
     Examples:
       | Username                   | Password         |
       | salesmanager16@info.com    | salesmanager     |
