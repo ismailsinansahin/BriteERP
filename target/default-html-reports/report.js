@@ -1,33 +1,138 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/UserModules.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ModuleLinks.feature");
 formatter.feature({
-  "name": "Modules Names",
-  "description": "  Agile Story: As a user I should be able to see all modules which I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can see all modules they are supposed to see",
+  "name": "Module Links",
+  "description": "  Agile Story: As a user I should be able to go to any module I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can go all modules they are supposed to see",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"\u003cUsername\u003e\" \"\u003cPassword\u003e\"",
+  "name": "the user login as a \"\u003cUser Type\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"\u003cUsername\u003e\"",
-  "keyword": "Then "
+  "name": "the \"\u003cUser Type\u003e\" should be able to go related modules",
+  "keyword": "Then ",
+  "rows": [
+    {
+      "cells": [
+        "\u003cModule1\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule2\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule3\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule4\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule5\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule6\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule7\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule8\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule9\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule10\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule11\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule12\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule13\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule14\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule15\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule16\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule17\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule18\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule19\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule20\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule21\u003e"
+      ]
+    },
+    {
+      "cells": [
+        "\u003cModule22\u003e"
+      ]
+    }
+  ]
 });
 formatter.examples({
   "name": "",
@@ -36,52 +141,175 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Username",
-        "Password"
+        "User Type",
+        "Module1",
+        "Module2",
+        "Module3",
+        "Module4",
+        "Module5",
+        "Module6",
+        "Module7",
+        "Module8",
+        "Module9",
+        "Module10",
+        "Module11",
+        "Module12",
+        "Module13",
+        "Module14",
+        "Module15",
+        "Module16",
+        "Module17",
+        "Module18",
+        "Module19",
+        "Module20",
+        "Module21",
+        "Module22"
       ]
     },
     {
       "cells": [
-        "salesmanager16@info.com",
-        "salesmanager"
+        "POS Manager",
+        "Discuss",
+        "Calendar",
+        "Notes",
+        "Contacts",
+        "CRM",
+        "Sales",
+        "Website",
+        "Point of Sale",
+        "Purchases",
+        "Inventory",
+        "Manufacturing",
+        "Repairs",
+        "Project",
+        "Events",
+        "Surveys",
+        "Employees",
+        "Attendances",
+        "Leaves",
+        "Expenses",
+        "Maintenance",
+        "Fleet",
+        "Dashboards"
       ]
     },
     {
       "cells": [
-        "posmanager16@info.com",
-        "posmanager"
+        "Sales Manager",
+        "Discuss",
+        "Calendar",
+        "Notes",
+        "Contacts",
+        "CRM",
+        "Sales",
+        "Website",
+        "Point of Sale",
+        "Purchases",
+        "Inventory",
+        "Repairs",
+        "Invoicing",
+        "Email Marketing",
+        "Events",
+        "Employees",
+        "Leaves",
+        "Expenses",
+        "Maintenance",
+        "Dashboards",
+        "-",
+        "-",
+        "-"
       ]
     },
     {
       "cells": [
-        "imm16@info.com",
-        "inventorymanager"
+        "Expenses Manager",
+        "Discuss",
+        "Calendar",
+        "Notes",
+        "Contacts",
+        "Website",
+        "Events",
+        "Employees",
+        "Leaves",
+        "Expenses",
+        "Lunch",
+        "Maintenance",
+        "Dashboards",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     },
     {
       "cells": [
-        "expensesmanager16@info.com",
-        "expensesmanager"
+        "Inventory Manager",
+        "Discuss",
+        "Calendar",
+        "Notes",
+        "Contacts",
+        "Website",
+        "Manufacturing",
+        "Employees",
+        "Leaves",
+        "Expenses",
+        "Maintenance",
+        "Dashboards",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     },
     {
       "cells": [
-        "manuf_user16@info.com",
-        "manufuser"
+        "Manufacturing User",
+        "Discuss",
+        "Calendar",
+        "Notes",
+        "Contacts",
+        "Website",
+        "Events",
+        "Employees",
+        "Leaves",
+        "Expenses",
+        "Maintenance",
+        "Dashboards",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
@@ -89,31 +317,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"salesmanager16@info.com\" \"salesmanager\"",
+  "name": "the user login as a \"POS Manager\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"salesmanager16@info.com\"",
+  "name": "the \"POS Manager\" should be able to go related modules",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -122,15 +364,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
@@ -138,31 +377,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"posmanager16@info.com\" \"posmanager\"",
+  "name": "the user login as a \"Sales Manager\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"posmanager16@info.com\"",
+  "name": "the \"Sales Manager\" should be able to go related modules",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -171,15 +424,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
@@ -187,31 +437,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"imm16@info.com\" \"inventorymanager\"",
+  "name": "the user login as a \"Expenses Manager\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"imm16@info.com\"",
+  "name": "the \"Expenses Manager\" should be able to go related modules",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -220,15 +484,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
@@ -236,31 +497,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"expensesmanager16@info.com\" \"expensesmanager\"",
+  "name": "the user login as a \"Inventory Manager\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"expensesmanager16@info.com\"",
+  "name": "the \"Inventory Manager\" should be able to go related modules",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
@@ -269,15 +544,12 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Users should be able to login with valid credentials",
+  "name": "Users should be able to go to any module they have right to access",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Dashboard"
-    },
-    {
-      "name": "@UserModules"
+      "name": "@ModuleLinks"
     }
   ]
 });
@@ -285,31 +557,45 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enter valid credentials \"manuf_user16@info.com\" \"manufuser\"",
+  "name": "the user login as a \"Manufacturing User\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to see related modules based on \"manuf_user16@info.com\"",
+  "name": "the \"Manufacturing User\" should be able to go related modules",
+  "rows": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

@@ -18,6 +18,11 @@ public class LoginStepDefs {
         loginPage.clickOnLoginButton();
     }
 
+    @When("the user login as a {string}")
+    public void the_user_login_as_a(String userType) {
+        loginPage.loginAsA(userType);
+    }
+
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
         loginPage.verifySuccessfulLogin();
