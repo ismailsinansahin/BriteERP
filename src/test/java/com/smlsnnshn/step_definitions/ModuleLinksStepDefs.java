@@ -1,13 +1,18 @@
 package com.smlsnnshn.step_definitions;
 
+import com.smlsnnshn.pages.DashboardPage;
 import io.cucumber.java.en.Then;
+
+import java.util.List;
 
 public class ModuleLinksStepDefs {
 
-    @Then("the user should be able to go related {string}")
-    public void the_user_should_be_able_to_go_related(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    DashboardPage dashboardPage = new DashboardPage();
+
+    @Then("the {string} should be able to go related modules")
+    public void the_should_be_able_to_go_related_modules(String userType, List<String> modules) {
+        System.out.println(userType + "test is running");
+        dashboardPage.verifyModuleLinksBasedOnUserTypes(userType, modules);
     }
 
 }

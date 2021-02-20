@@ -9,3 +9,4 @@ Feature: Avatar Functionality
 
   Scenario: Users should be able to see their avatars on the top menu
     Then the user should be able to see their avatars on the top menu
+

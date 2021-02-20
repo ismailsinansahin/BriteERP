@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-17T20:13:10.586Z",
+        "start_timestamp": "2021-02-20T16:33:39.829Z",
         "before": [
           {
             "result": {
-              "duration": 7402906400,
+              "duration": 5783818300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "Users should be able to login with valid credentials",
+        "line": 33,
+        "name": "Users should be able to go to any module they have right to access",
         "description": "",
-        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;2",
+        "id": "module-links;users-should-be-able-to-go-to-any-module-they-have-right-to-access;;2",
         "after": [
           {
             "result": {
-              "duration": 2626812400,
+              "duration": 2689462900,
               "status": "passed"
             },
             "match": {
@@ -35,72 +35,165 @@
         "steps": [
           {
             "result": {
-              "duration": 147597800,
+              "duration": 2820276300,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user enter valid credentials \"salesmanager16@info.com\" \"salesmanager\"",
+            "name": "the user login as a \"POS Manager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"salesmanager\"",
-                  "offset": 59
+                  "val": "\"POS Manager\"",
+                  "offset": 20
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4841890100,
+              "duration": 131985629300,
               "status": "passed"
             },
             "line": 8,
-            "name": "click on login button",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 420853400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see related modules based on \"salesmanager16@info.com\"",
+            "name": "the \"POS Manager\" should be able to go related modules",
             "match": {
               "arguments": [
                 {
-                  "val": "\"salesmanager16@info.com\"",
-                  "offset": 56
+                  "val": "\"POS Manager\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Discuss"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Notes"
+                ]
+              },
+              {
+                "cells": [
+                  "Contacts"
+                ]
+              },
+              {
+                "cells": [
+                  "CRM"
+                ]
+              },
+              {
+                "cells": [
+                  "Sales"
+                ]
+              },
+              {
+                "cells": [
+                  "Website"
+                ]
+              },
+              {
+                "cells": [
+                  "Point of Sale"
+                ]
+              },
+              {
+                "cells": [
+                  "Purchases"
+                ]
+              },
+              {
+                "cells": [
+                  "Inventory"
+                ]
+              },
+              {
+                "cells": [
+                  "Manufacturing"
+                ]
+              },
+              {
+                "cells": [
+                  "Repairs"
+                ]
+              },
+              {
+                "cells": [
+                  "Project"
+                ]
+              },
+              {
+                "cells": [
+                  "Events"
+                ]
+              },
+              {
+                "cells": [
+                  "Surveys"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Attendances"
+                ]
+              },
+              {
+                "cells": [
+                  "Leaves"
+                ]
+              },
+              {
+                "cells": [
+                  "Expenses"
+                ]
+              },
+              {
+                "cells": [
+                  "Maintenance"
+                ]
+              },
+              {
+                "cells": [
+                  "Fleet"
+                ]
+              },
+              {
+                "cells": [
+                  "Dashboards"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dashboard"
-          },
-          {
-            "name": "@UserModules"
+            "name": "@ModuleLinks"
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-17T20:13:26.082Z",
+        "start_timestamp": "2021-02-20T16:36:03.189Z",
         "before": [
           {
             "result": {
-              "duration": 6470361500,
+              "duration": 6213758600,
               "status": "passed"
             },
             "match": {
@@ -108,14 +201,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Users should be able to login with valid credentials",
+        "line": 34,
+        "name": "Users should be able to go to any module they have right to access",
         "description": "",
-        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;3",
+        "id": "module-links;users-should-be-able-to-go-to-any-module-they-have-right-to-access;;3",
         "after": [
           {
             "result": {
-              "duration": 2701215300,
+              "duration": 2701600100,
               "status": "passed"
             },
             "match": {
@@ -128,72 +221,165 @@
         "steps": [
           {
             "result": {
-              "duration": 121674800,
+              "duration": 3122888000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user enter valid credentials \"posmanager16@info.com\" \"posmanager\"",
+            "name": "the user login as a \"Sales Manager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"posmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"posmanager\"",
-                  "offset": 57
+                  "val": "\"Sales Manager\"",
+                  "offset": 20
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4503559800,
+              "duration": 89037062400,
               "status": "passed"
             },
             "line": 8,
-            "name": "click on login button",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 452607600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see related modules based on \"posmanager16@info.com\"",
+            "name": "the \"Sales Manager\" should be able to go related modules",
             "match": {
               "arguments": [
                 {
-                  "val": "\"posmanager16@info.com\"",
-                  "offset": 56
+                  "val": "\"Sales Manager\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Discuss"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Notes"
+                ]
+              },
+              {
+                "cells": [
+                  "Contacts"
+                ]
+              },
+              {
+                "cells": [
+                  "CRM"
+                ]
+              },
+              {
+                "cells": [
+                  "Sales"
+                ]
+              },
+              {
+                "cells": [
+                  "Website"
+                ]
+              },
+              {
+                "cells": [
+                  "Point of Sale"
+                ]
+              },
+              {
+                "cells": [
+                  "Purchases"
+                ]
+              },
+              {
+                "cells": [
+                  "Inventory"
+                ]
+              },
+              {
+                "cells": [
+                  "Repairs"
+                ]
+              },
+              {
+                "cells": [
+                  "Invoicing"
+                ]
+              },
+              {
+                "cells": [
+                  "Email Marketing"
+                ]
+              },
+              {
+                "cells": [
+                  "Events"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Leaves"
+                ]
+              },
+              {
+                "cells": [
+                  "Expenses"
+                ]
+              },
+              {
+                "cells": [
+                  "Maintenance"
+                ]
+              },
+              {
+                "cells": [
+                  "Dashboards"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dashboard"
-          },
-          {
-            "name": "@UserModules"
+            "name": "@ModuleLinks"
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-17T20:13:40.347Z",
+        "start_timestamp": "2021-02-20T16:37:44.275Z",
         "before": [
           {
             "result": {
-              "duration": 6386263500,
+              "duration": 4691444900,
               "status": "passed"
             },
             "match": {
@@ -201,14 +387,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Users should be able to login with valid credentials",
+        "line": 35,
+        "name": "Users should be able to go to any module they have right to access",
         "description": "",
-        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;4",
+        "id": "module-links;users-should-be-able-to-go-to-any-module-they-have-right-to-access;;4",
         "after": [
           {
             "result": {
-              "duration": 2660252400,
+              "duration": 2704066700,
               "status": "passed"
             },
             "match": {
@@ -221,71 +407,165 @@
         "steps": [
           {
             "result": {
-              "duration": 118684000,
+              "duration": 2823342600,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user enter valid credentials \"imm16@info.com\" \"inventorymanager\"",
+            "name": "the user login as a \"Expenses Manager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"imm16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"inventorymanager\"",
-                  "offset": 50
+                  "val": "\"Expenses Manager\"",
+                  "offset": 20
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4722092500,
+              "duration": 33882259700,
               "status": "passed"
             },
             "line": 8,
-            "name": "click on login button",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see related modules based on \"imm16@info.com\"",
+            "name": "the \"Expenses Manager\" should be able to go related modules",
             "match": {
               "arguments": [
                 {
-                  "val": "\"imm16@info.com\"",
-                  "offset": 56
+                  "val": "\"Expenses Manager\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Discuss"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Notes"
+                ]
+              },
+              {
+                "cells": [
+                  "Contacts"
+                ]
+              },
+              {
+                "cells": [
+                  "Website"
+                ]
+              },
+              {
+                "cells": [
+                  "Events"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Leaves"
+                ]
+              },
+              {
+                "cells": [
+                  "Expenses"
+                ]
+              },
+              {
+                "cells": [
+                  "Lunch"
+                ]
+              },
+              {
+                "cells": [
+                  "Maintenance"
+                ]
+              },
+              {
+                "cells": [
+                  "Dashboards"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dashboard"
-          },
-          {
-            "name": "@UserModules"
+            "name": "@ModuleLinks"
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-17T20:13:54.250Z",
+        "start_timestamp": "2021-02-20T16:38:28.383Z",
         "before": [
           {
             "result": {
-              "duration": 6430271400,
+              "duration": 4800662900,
               "status": "passed"
             },
             "match": {
@@ -293,14 +573,14 @@
             }
           }
         ],
-        "line": 15,
-        "name": "Users should be able to login with valid credentials",
+        "line": 36,
+        "name": "Users should be able to go to any module they have right to access",
         "description": "",
-        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;5",
+        "id": "module-links;users-should-be-able-to-go-to-any-module-they-have-right-to-access;;5",
         "after": [
           {
             "result": {
-              "duration": 2685812600,
+              "duration": 2662871600,
               "status": "passed"
             },
             "match": {
@@ -313,72 +593,165 @@
         "steps": [
           {
             "result": {
-              "duration": 137687700,
+              "duration": 2736194800,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user enter valid credentials \"expensesmanager16@info.com\" \"expensesmanager\"",
+            "name": "the user login as a \"Inventory Manager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"expensesmanager16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"expensesmanager\"",
-                  "offset": 62
+                  "val": "\"Inventory Manager\"",
+                  "offset": 20
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4678053500,
+              "duration": 54157598500,
               "status": "passed"
             },
             "line": 8,
-            "name": "click on login button",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 247137000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see related modules based on \"expensesmanager16@info.com\"",
+            "name": "the \"Inventory Manager\" should be able to go related modules",
             "match": {
               "arguments": [
                 {
-                  "val": "\"expensesmanager16@info.com\"",
-                  "offset": 56
+                  "val": "\"Inventory Manager\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Discuss"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Notes"
+                ]
+              },
+              {
+                "cells": [
+                  "Contacts"
+                ]
+              },
+              {
+                "cells": [
+                  "Website"
+                ]
+              },
+              {
+                "cells": [
+                  "Manufacturing"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Leaves"
+                ]
+              },
+              {
+                "cells": [
+                  "Expenses"
+                ]
+              },
+              {
+                "cells": [
+                  "Maintenance"
+                ]
+              },
+              {
+                "cells": [
+                  "Dashboards"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dashboard"
-          },
-          {
-            "name": "@UserModules"
+            "name": "@ModuleLinks"
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-17T20:14:08.437Z",
+        "start_timestamp": "2021-02-20T16:39:32.756Z",
         "before": [
           {
             "result": {
-              "duration": 6325713700,
+              "duration": 4782145600,
               "status": "passed"
             },
             "match": {
@@ -386,14 +759,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "Users should be able to login with valid credentials",
+        "line": 37,
+        "name": "Users should be able to go to any module they have right to access",
         "description": "",
-        "id": "modules-names;users-should-be-able-to-login-with-valid-credentials;;6",
+        "id": "module-links;users-should-be-able-to-go-to-any-module-they-have-right-to-access;;6",
         "after": [
           {
             "result": {
-              "duration": 2722325000,
+              "duration": 2639300900,
               "status": "passed"
             },
             "match": {
@@ -406,87 +779,172 @@
         "steps": [
           {
             "result": {
-              "duration": 128653800,
+              "duration": 2811754700,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user enter valid credentials \"manuf_user16@info.com\" \"manufuser\"",
+            "name": "the user login as a \"Manufacturing User\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"manuf_user16@info.com\"",
-                  "offset": 33
-                },
-                {
-                  "val": "\"manufuser\"",
-                  "offset": 57
+                  "val": "\"Manufacturing User\"",
+                  "offset": 20
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_valid_credentials(java.lang.String,java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4411976300,
+              "duration": 30043268700,
               "status": "passed"
             },
             "line": 8,
-            "name": "click on login button",
-            "match": {
-              "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 252600400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user should be able to see related modules based on \"manuf_user16@info.com\"",
+            "name": "the \"Manufacturing User\" should be able to go related modules",
             "match": {
               "arguments": [
                 {
-                  "val": "\"manuf_user16@info.com\"",
-                  "offset": 56
+                  "val": "\"Manufacturing User\"",
+                  "offset": 4
                 }
               ],
-              "location": "com.smlsnnshn.step_definitions.UserModulesStepDefs.the_user_should_be_able_to_see_related_modules_based_on(java.lang.String)"
+              "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Discuss"
+                ]
+              },
+              {
+                "cells": [
+                  "Calendar"
+                ]
+              },
+              {
+                "cells": [
+                  "Notes"
+                ]
+              },
+              {
+                "cells": [
+                  "Contacts"
+                ]
+              },
+              {
+                "cells": [
+                  "Website"
+                ]
+              },
+              {
+                "cells": [
+                  "Events"
+                ]
+              },
+              {
+                "cells": [
+                  "Employees"
+                ]
+              },
+              {
+                "cells": [
+                  "Leaves"
+                ]
+              },
+              {
+                "cells": [
+                  "Expenses"
+                ]
+              },
+              {
+                "cells": [
+                  "Maintenance"
+                ]
+              },
+              {
+                "cells": [
+                  "Dashboards"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              },
+              {
+                "cells": [
+                  "-"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Dashboard"
-          },
-          {
-            "name": "@UserModules"
+            "name": "@ModuleLinks"
           }
         ]
       }
     ],
-    "name": "Modules Names",
-    "description": "  Agile Story: As a user I should be able to see all modules which I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can see all modules they are supposed to see",
-    "id": "modules-names",
+    "name": "Module Links",
+    "description": "  Agile Story: As a user I should be able to go to any module I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can go all modules they are supposed to see",
+    "id": "module-links",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UserModules.feature",
+    "uri": "file:src/test/resources/features/ModuleLinks.feature",
     "tags": [
       {
-        "name": "@Dashboard",
+        "name": "@ModuleLinks",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
-        }
-      },
-      {
-        "name": "@UserModules",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 12
         }
       }
     ]

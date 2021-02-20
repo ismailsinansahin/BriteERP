@@ -1,5 +1,6 @@
 package com.smlsnnshn.pages;
 
+import com.smlsnnshn.utilities.ConfigurationReader;
 import com.smlsnnshn.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
@@ -36,11 +37,38 @@ public class LoginPage {
         loginButton.click();
     }
 
-    public void loginAs(String userType){
-        String username = userType + "Username";
-        String password = userType + "Password";
-        enterCredentials(username,password);
-        clickOnLoginButton();
+    public void loginAsA(String userType){
+        String username, password;
+        if (userType.startsWith("POS Manager")) {
+            username = ConfigurationReader.get("posManagerUsername");
+            password = ConfigurationReader.get("posManagerPassword");
+            enterCredentials(username, password);
+            clickOnLoginButton();
+        }
+        if (userType.startsWith("Sales Manager")) {
+            username = ConfigurationReader.get("salesManagerUsername");
+            password = ConfigurationReader.get("salesManagerPassword");
+            enterCredentials(username, password);
+            clickOnLoginButton();
+        }
+        if (userType.startsWith("Expenses Manager")){
+            username = ConfigurationReader.get("expensesManagerUsername");
+            password = ConfigurationReader.get("expensesManagerPassword");
+            enterCredentials(username,password);
+            clickOnLoginButton();
+        }
+        if (userType.startsWith("Inventory Manager")) {
+            username = ConfigurationReader.get("inventoryManagerUsername");
+            password = ConfigurationReader.get("inventoryManagerPassword");
+            enterCredentials(username, password);
+            clickOnLoginButton();
+        }
+        if (userType.startsWith("Manufacturing User")) {
+            username = ConfigurationReader.get("manufacturerUserUsername");
+            password = ConfigurationReader.get("manufacturerUserPassword");
+            enterCredentials(username, password);
+            clickOnLoginButton();
+        }
     }
 
     public void verifySuccessfulLogin(){
