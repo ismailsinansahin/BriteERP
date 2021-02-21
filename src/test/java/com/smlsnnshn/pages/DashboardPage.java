@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.*;
 
-public class DashboardPage {
+public class DashboardPage extends BasePage{
 
     public DashboardPage(){
         PageFactory.initElements(Driver.get(),this);
