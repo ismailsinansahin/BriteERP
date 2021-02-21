@@ -1,138 +1,41 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ModuleLinks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/NegativeLogin.feature");
 formatter.feature({
-  "name": "Module Links",
-  "description": "  Agile Story: As a user I should be able to go to any module I have right to access on the top menu\n  Description: The purpose of this feature is to test if users can go all modules they are supposed to see",
+  "name": "Negative Login",
+  "description": "  Agile Story: As a user I should not be able to login with invalid credentials\n  Description: The purpose of this feature is to test the login functionality (Negative Test)",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@ModuleLinks"
+      "name": "@Login"
+    },
+    {
+      "name": "@NegativeLogin"
+    },
+    {
+      "name": "@Dashboard"
     }
   ]
 });
 formatter.scenarioOutline({
-  "name": "Users should be able to go to any module they have right to access",
+  "name": "Users should not be able to login with blank credentials",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@BlankCredentials"
+    }
+  ]
 });
 formatter.step({
-  "name": "the user login as a \"\u003cUser Type\u003e\"",
+  "name": "the user enter blank credentials \"\u003cUsername\u003e\" \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "name": "the \"\u003cUser Type\u003e\" should be able to go related modules",
-  "keyword": "Then ",
-  "rows": [
-    {
-      "cells": [
-        "\u003cModule1\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule2\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule3\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule4\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule5\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule6\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule7\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule8\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule9\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule10\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule11\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule12\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule13\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule14\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule15\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule16\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule17\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule18\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule19\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule20\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule21\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "\u003cModule22\u003e"
-      ]
-    }
-  ]
+  "name": "click on login button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "the user should see blank message \"\u003cMessage\u003e\"",
+  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -141,175 +44,43 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "User Type",
-        "Module1",
-        "Module2",
-        "Module3",
-        "Module4",
-        "Module5",
-        "Module6",
-        "Module7",
-        "Module8",
-        "Module9",
-        "Module10",
-        "Module11",
-        "Module12",
-        "Module13",
-        "Module14",
-        "Module15",
-        "Module16",
-        "Module17",
-        "Module18",
-        "Module19",
-        "Module20",
-        "Module21",
-        "Module22"
+        "Username",
+        "Password",
+        "Message"
       ]
     },
     {
       "cells": [
-        "POS Manager",
-        "Discuss",
-        "Calendar",
-        "Notes",
-        "Contacts",
-        "CRM",
-        "Sales",
-        "Website",
-        "Point of Sale",
-        "Purchases",
-        "Inventory",
-        "Manufacturing",
-        "Repairs",
-        "Project",
-        "Events",
-        "Surveys",
-        "Employees",
-        "Attendances",
-        "Leaves",
-        "Expenses",
-        "Maintenance",
-        "Fleet",
-        "Dashboards"
+        "blank",
+        "posmanager",
+        "Please fill out this field."
       ]
     },
     {
       "cells": [
-        "Sales Manager",
-        "Discuss",
-        "Calendar",
-        "Notes",
-        "Contacts",
-        "CRM",
-        "Sales",
-        "Website",
-        "Point of Sale",
-        "Purchases",
-        "Inventory",
-        "Repairs",
-        "Invoicing",
-        "Email Marketing",
-        "Events",
-        "Employees",
-        "Leaves",
-        "Expenses",
-        "Maintenance",
-        "Dashboards",
-        "-",
-        "-",
-        "-"
-      ]
-    },
-    {
-      "cells": [
-        "Expenses Manager",
-        "Discuss",
-        "Calendar",
-        "Notes",
-        "Contacts",
-        "Website",
-        "Events",
-        "Employees",
-        "Leaves",
-        "Expenses",
-        "Lunch",
-        "Maintenance",
-        "Dashboards",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-"
-      ]
-    },
-    {
-      "cells": [
-        "Inventory Manager",
-        "Discuss",
-        "Calendar",
-        "Notes",
-        "Contacts",
-        "Website",
-        "Manufacturing",
-        "Employees",
-        "Leaves",
-        "Expenses",
-        "Maintenance",
-        "Dashboards",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-"
-      ]
-    },
-    {
-      "cells": [
-        "Manufacturing User",
-        "Discuss",
-        "Calendar",
-        "Notes",
-        "Contacts",
-        "Website",
-        "Events",
-        "Employees",
-        "Leaves",
-        "Expenses",
-        "Maintenance",
-        "Dashboards",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-",
-        "-"
+        "posmanager16@info.com",
+        "blank",
+        "Please fill out this field."
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Users should be able to go to any module they have right to access",
+  "name": "Users should not be able to login with blank credentials",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@ModuleLinks"
+      "name": "@Login"
+    },
+    {
+      "name": "@NegativeLogin"
+    },
+    {
+      "name": "@Dashboard"
+    },
+    {
+      "name": "@BlankCredentials"
     }
   ]
 });
@@ -317,59 +88,56 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user login as a \"POS Manager\"",
+  "name": "the user enter blank credentials \"blank\" \"posmanager\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the \"POS Manager\" should be able to go related modules",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
+  "name": "click on login button",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "the user should see blank message \"Please fill out this field.\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027toast-message\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.182)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-J5QIJV6\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\A\\AppData\\Local\\Te...}, goog:chromeOptions: {debuggerAddress: localhost:58664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 14ddbea2905704df7eabedd0d5a06d39\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027toast-message\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.smlsnnshn.pages.LoginPage.verifyBlankMessage(LoginPage.java:82)\r\n\tat com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(LoginStepDefs.java:50)\r\n\tat ✽.the user should see blank message \"Please fill out this field.\"(file:///C:/Users/A/IdeaProjects/BriteERP/src/test/resources/features/NegativeLogin.feature:20)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Users should be able to go to any module they have right to access",
+  "name": "Users should not be able to login with blank credentials",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@ModuleLinks"
+      "name": "@Login"
+    },
+    {
+      "name": "@NegativeLogin"
+    },
+    {
+      "name": "@Dashboard"
+    },
+    {
+      "name": "@BlankCredentials"
     }
   ]
 });
@@ -377,229 +145,37 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user login as a \"Sales Manager\"",
+  "name": "the user enter blank credentials \"posmanager16@info.com\" \"blank\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_enter_blank_credentials(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the \"Sales Manager\" should be able to go related modules",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "click on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.click_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user should see blank message \"Please fill out this field.\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027toast-message\u0027]\"}\n  (Session info: chrome\u003d88.0.4324.182)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-J5QIJV6\u0027, ip: \u0027192.168.1.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.182, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\\Users\\A\\AppData\\Local\\Te...}, goog:chromeOptions: {debuggerAddress: localhost:58687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ed979bf24c0d50bc7cf99e93fe4177c5\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027toast-message\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.getText(Unknown Source)\r\n\tat com.smlsnnshn.pages.LoginPage.verifyBlankMessage(LoginPage.java:82)\r\n\tat com.smlsnnshn.step_definitions.LoginStepDefs.the_user_should_see_blank_message(LoginStepDefs.java:50)\r\n\tat ✽.the user should see blank message \"Please fill out this field.\"(file:///C:/Users/A/IdeaProjects/BriteERP/src/test/resources/features/NegativeLogin.feature:20)\r\n",
+  "status": "failed"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users should be able to go to any module they have right to access",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ModuleLinks"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user login as a \"Expenses Manager\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the \"Expenses Manager\" should be able to go related modules",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users should be able to go to any module they have right to access",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ModuleLinks"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user login as a \"Inventory Manager\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the \"Inventory Manager\" should be able to go related modules",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Users should be able to go to any module they have right to access",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ModuleLinks"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user login as a \"Manufacturing User\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.LoginStepDefs.the_user_login_as_a(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the \"Manufacturing User\" should be able to go related modules",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.smlsnnshn.step_definitions.ModuleLinksStepDefs.the_should_be_able_to_go_related_modules(java.lang.String,java.util.List\u003cjava.lang.String\u003e)"
-});
-formatter.result({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

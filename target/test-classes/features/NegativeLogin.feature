@@ -1,4 +1,4 @@
-@Login @NegativeLogin
+@Login @NegativeLogin @Dashboard
 Feature: Negative Login
   Agile Story: As a user I should not be able to login with invalid credentials
   Description: The purpose of this feature is to test the login functionality (Negative Test)

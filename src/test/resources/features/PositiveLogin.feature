@@ -1,4 +1,4 @@
-@Login @PositiveLogin
+@Login @PositiveLogin @Dashboard
 Feature: Positive Login
   Agile Story: As a user I should be able to login with valid credentials
   Description: The purpose of this feature is to test the login functionality
@@ -16,7 +16,7 @@ Feature: Positive Login
       | expensesmanager16@info.com | expensesmanager  |
       | manuf_user16@info.com      | manufuser        |
 
-    @POSManagerLogin
+  @POSManagerLogin @Smoke
   Scenario: Users should be able to login with valid credentials
     When the user enter valid credentials "posmanager16@info.com" "posmanager"
     And click on login button

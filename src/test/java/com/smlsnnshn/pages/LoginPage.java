@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 
     public LoginPage(){
         PageFactory.initElements(Driver.get(),this);
@@ -79,7 +79,7 @@ public class LoginPage {
     public void verifyWrongMessage(String expectedMessage){ Assert.assertEquals(expectedMessage,wrongMessage.getText()); }
 
     public void verifyBlankMessage(String expectedMessage){
-        Assert.assertEquals(expectedMessage,blankMessage);
+        Assert.assertEquals(expectedMessage,blankMessage.getText());
     }
 
 }
