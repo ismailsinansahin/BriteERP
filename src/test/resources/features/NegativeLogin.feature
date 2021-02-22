@@ -17,10 +17,10 @@ Feature: Negative Login
   Scenario Outline: Users should not be able to login with blank credentials
     When the user enter blank credentials "<Username>" "<Password>"
     And click on login button
-    Then the user should see blank message "<Message>"
+    Then the user should see blank message "<Message>" "<Username>" "<Password>"
     Examples:
-      | Username              | Password      | Message                     |
-      | blank                 | posmanager    | Please fill out this field. |
-      | posmanager16@info.com | blank         | Please fill out this field. |
+      | Username              | Password   | Message                     |
+      | -                     | posmanager | Please fill out this field. |
+      | posmanager16@info.com | -          | Please fill out this field. |
 
 

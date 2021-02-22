@@ -35,8 +35,8 @@ public class LoginStepDefs {
 
     @When("the user enter blank credentials {string} {string}")
     public void the_user_enter_blank_credentials(String username, String password) {
-        if (username.contains("blank")) username="";
-        if (password.contains("blank")) password="";
+        if (username.contains("-")) username="";
+        if (password.contains("-")) password="";
         loginPage.enterCredentials(username,password);
     }
 
@@ -45,9 +45,9 @@ public class LoginStepDefs {
         loginPage.verifyWrongMessage(message);
     }
 
-    @Then("the user should see blank message {string}")
-    public void the_user_should_see_blank_message(String message) {
-        loginPage.verifyBlankMessage(message);
+    @Then("the user should see blank message {string} {string} {string}")
+    public void theUserShouldSeeBlankMessage(String message, String username, String password) {
+        loginPage.verifyBlankMessage(message,username,password);
     }
 
 }
