@@ -5,13 +5,8 @@ import com.smlsnnshn.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage{
-
-    public LoginPage(){
-        PageFactory.initElements(Driver.get(),this);
-    }
 
     @FindBy(id = "login")
     public WebElement usernameInput;
@@ -25,8 +20,11 @@ public class LoginPage extends BasePage{
     @FindBy(className = "alert")
     public WebElement wrongMessage;
 
-    @FindBy(xpath = "//div[@class='toast-message']")
-    public WebElement blankMessage;
+    @FindBy(id = "login")
+    public WebElement blankUsernameMessage;
+
+    @FindBy(id = "password")
+    public WebElement blankPasswordMessage;
 
     public void enterCredentials(String username,String password){
         usernameInput.sendKeys(username);
@@ -78,8 +76,13 @@ public class LoginPage extends BasePage{
 
     public void verifyWrongMessage(String expectedMessage){ Assert.assertEquals(expectedMessage,wrongMessage.getText()); }
 
-    public void verifyBlankMessage(String expectedMessage){
-        Assert.assertEquals(expectedMessage,blankMessage.getText());
+    public void verifyBlankMessage(String expectedMessage, String username, String password){
+        if (username.contains("-")) {
+            Assert.assertEquals(expectedMessage,blankUsernameMessage.getAttribute("validationMessage"));
+        }
+        if (password.contains("-")) {
+            Assert.assertEquals(expectedMessage,blankPasswordMessage.getAttribute("validationMessage"));
+        }
     }
 
 }
