@@ -11,7 +11,6 @@ public class ModuleLinksStepDefs {
 
     @Then("the {string} should be able to go related modules")
     public void the_should_be_able_to_go_related_modules(String userType, List<String> modules) {
-        System.out.println(userType + "test is running");
         dashboardPage.verifyModuleLinksBasedOnUserTypes(userType, modules);
     }
 

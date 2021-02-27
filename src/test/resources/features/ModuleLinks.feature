@@ -35,3 +35,5 @@ Feature: Module Links
       | Expenses Manager   | Discuss | Calendar | Notes   | Contacts | Website | Events        | Employees | Leaves        | Expenses  | Lunch       | Maintenance   | Dashboards | -               | -        | -         | -         | -           | -           | -          | -           | -        | -          |
       | Inventory Manager  | Discuss | Calendar | Notes   | Contacts | Website | Manufacturing | Employees | Leaves        | Expenses  | Maintenance | Dashboards    | -          | -               | -        | -         | -         | -           | -           | -          | -           | -        | -          |
       | Manufacturing User | Discuss | Calendar | Notes   | Contacts | Website | Events        | Employees | Leaves        | Expenses  | Maintenance | Dashboards    | -          | -               | -        | -         | -         | -           | -           | -          | -           | -        | -          |
+
+

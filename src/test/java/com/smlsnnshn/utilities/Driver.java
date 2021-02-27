@@ -25,7 +25,7 @@ public class Driver {
     // driver class will provide separate webdriver object per thread
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 
-    private static final String GRID_URL = "http://34.232.65.118:4444/wd/hub";
+    private static final String GRID_URL = "http://" + ConfigurationReader.get("gridHubIp") + ":4444/wd/hub";
     
     public static WebDriver get() {
         //if this thread doesn't have driver - create it and add to pool
