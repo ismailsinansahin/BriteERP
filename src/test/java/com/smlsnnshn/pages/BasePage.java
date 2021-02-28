@@ -2,7 +2,6 @@ package com.smlsnnshn.pages;
 
 import com.smlsnnshn.utilities.BrowserUtils;
 import com.smlsnnshn.utilities.Driver;
-import io.cucumber.java.bs.A;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
@@ -165,7 +164,7 @@ public abstract class BasePage {
                     Driver.get().navigate().back();
                 }
             }else{
-                Assert.assertTrue(getLocatorsOfLinks(each).isDisplayed());
+                Assert.assertTrue(getLocatorsOfPages(each).isDisplayed());
                 verifyYouAreOnDashboardPage(each);
             }
         }
@@ -205,7 +204,7 @@ public abstract class BasePage {
         }
     }
 
-    private WebElement getLocatorsOfLinks(String moduleName) {
+    private WebElement getLocatorsOfPages(String moduleName) {
         Map<String, WebElement> locatorsOfLinks= new HashMap<String, WebElement>() {{
             put("Discuss", discussPageLocator);
             put("Calendar", calendarPageLocator);
