@@ -36,7 +36,7 @@ public abstract class BasePage {
     public WebElement loginPageLocator;
 
     @FindBy(xpath = "//a[@class='dropdown-toggle']/img")
-    public WebElement avatar;
+    public WebElement avatarImage;
 
     @FindBy(xpath = "//*[@title='Conversations']")
     public WebElement conversations;
@@ -135,7 +135,7 @@ public abstract class BasePage {
         Assert.assertEquals(expectedUsername,username.getText());
     }
 
-    public void verifyAvatarIsDisplayed(){Assert.assertTrue(avatar.isEnabled()); }
+    public void verifyAvatarIsDisplayed(){Assert.assertTrue(avatarImage.isEnabled()); }
 
     public void verifyConversationsIsDisplayed(){
         Assert.assertTrue(conversations.isDisplayed());

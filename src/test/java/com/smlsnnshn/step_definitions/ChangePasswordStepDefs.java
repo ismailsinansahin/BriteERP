@@ -37,8 +37,8 @@ public class ChangePasswordStepDefs {
         preferencesPage.clickOnChangePasswordSubmitButton();
     }
 
-    @Then("the user sould be in the Login Page")
-    public void the_user_sould_be_in_the_Login_Page() {
+    @Then("the user should be in the Login Page")
+    public void the_user_should_be_in_the_Login_Page() {
         loginPage.loginButton.isDisplayed();
     }
 

@@ -1,5 +1,5 @@
 @Preferences @ChangePassword
-Feature: Positive Login
+Feature: Change Password
   Agile Story: As a user I should be able to change my password from the Preferences page
   Description: The purpose of this feature is to test the change password functionality
 
@@ -13,7 +13,7 @@ Feature: Positive Login
     And enter New Password "posmanager"
     And enter New Password again "posmanager"
     And click on Change Password button
-    And the user sould be in the Login Page
+    And the user should be in the Login Page
     And the user enter valid credentials "posmanager15@info.com" "posmanager"
     And click on login button
     Then the user should be able to login

@@ -3,7 +3,7 @@ package com.smlsnnshn.step_definitions;
 import com.smlsnnshn.pages.DashboardPage;
 import io.cucumber.java.en.Then;
 
-public class AvatarStepDefs {
+public class AvatarIconStepDefs {
 
     DashboardPage dashboardPage = new DashboardPage();
 
