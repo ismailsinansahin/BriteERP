@@ -170,7 +170,7 @@ public abstract class BasePage {
         }
     }
 
-    private List<String> getExpectedModuleList(List<String> modulesList) {
+    public List<String> getExpectedModuleList(List<String> modulesList) {
         List<String> expectedModuleList = new ArrayList<>();
         for (String each : modulesList) {
             if (!each.equals("-")) expectedModuleList.add(each);
@@ -178,7 +178,7 @@ public abstract class BasePage {
         return expectedModuleList;
     }
 
-    private void clickOnTheMoreButton() {
+    public void clickOnTheMoreButton() {
         try {
             if (moreButton.isEnabled()) moreButton.click();
         }catch (ElementNotInteractableException e){
@@ -186,12 +186,12 @@ public abstract class BasePage {
         }
     }
 
-    private void verifyYouAreOnDashboardPage(String moduleLink) {
+    public void verifyYouAreOnDashboardPage(String moduleLink) {
         if (moduleLink.equals("Lunch")) lunchWindowOKButton.click();
         BrowserUtils.waitFor(1);
     }
 
-    private void clickOnTheModuleLink(String moduleLink) {
+    public void clickOnTheModuleLink(String moduleLink) {
         String moduleLinkLocator = "//span[contains(text(),'" + moduleLink + "')]";
         WebElement moduleName = Driver.get().findElement(By.xpath(moduleLinkLocator));
         try {
@@ -204,7 +204,7 @@ public abstract class BasePage {
         }
     }
 
-    private WebElement getLocatorsOfPages(String moduleName) {
+    public WebElement getLocatorsOfPages(String moduleName) {
         Map<String, WebElement> locatorsOfLinks= new HashMap<String, WebElement>() {{
             put("Discuss", discussPageLocator);
             put("Calendar", calendarPageLocator);
@@ -269,7 +269,7 @@ public abstract class BasePage {
 
     }
 
-    protected void swtichToTheNewPage(){
+    public void swtichToTheNewPage(){
         String currentWindowHandle = Driver.get().getWindowHandle();
         Set<String> windowHandles = Driver.get().getWindowHandles();
         for (String each : windowHandles) {
