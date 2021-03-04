@@ -9,10 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public abstract class BasePage {
 
@@ -23,8 +20,23 @@ public abstract class BasePage {
     @FindBy(className = "oe_topbar_name")
     public WebElement username;
 
-    @FindBy(xpath = "//img[@class='img-circle oe_topbar_avatar']")
-    public WebElement avatar;
+    @FindBy(xpath = "//h1[contains(text(),'Odoo User Documentation')]")
+    public WebElement documentationPageLocator;
+
+    @FindBy(xpath = "//h1[contains(text(),'Odoo Pricing')]")
+    public WebElement supportPageLocator;
+
+    @FindBy(xpath = "//span[contains(text(),'Cancel')]")
+    public WebElement preferencesPageLocator;
+
+    @FindBy(xpath = "//a[contains(text(),'Sign in')]")
+    public WebElement myOdooComAccountPageLocator;
+
+    @FindBy(xpath = "//button[contains(text(),'Log in')]")
+    public WebElement loginPageLocator;
+
+    @FindBy(xpath = "//a[@class='dropdown-toggle']/img")
+    public WebElement avatarImage;
 
     @FindBy(xpath = "//*[@title='Conversations']")
     public WebElement conversations;
@@ -123,9 +135,7 @@ public abstract class BasePage {
         Assert.assertEquals(expectedUsername,username.getText());
     }
 
-    public void verifyAvatarIsDisplayed(){
-        Assert.assertTrue(avatar.isDisplayed());
-    }
+    public void verifyAvatarIsDisplayed(){Assert.assertTrue(avatarImage.isEnabled()); }
 
     public void verifyConversationsIsDisplayed(){
         Assert.assertTrue(conversations.isDisplayed());
@@ -154,13 +164,13 @@ public abstract class BasePage {
                     Driver.get().navigate().back();
                 }
             }else{
-                Assert.assertTrue(getLocatorsOfLinks(each).isDisplayed());
+                Assert.assertTrue(getLocatorsOfPages(each).isDisplayed());
                 verifyYouAreOnDashboardPage(each);
             }
         }
     }
 
-    private List<String> getExpectedModuleList(List<String> modulesList) {
+    public List<String> getExpectedModuleList(List<String> modulesList) {
         List<String> expectedModuleList = new ArrayList<>();
         for (String each : modulesList) {
             if (!each.equals("-")) expectedModuleList.add(each);
@@ -168,7 +178,7 @@ public abstract class BasePage {
         return expectedModuleList;
     }
 
-    private void clickOnTheMoreButton() {
+    public void clickOnTheMoreButton() {
         try {
             if (moreButton.isEnabled()) moreButton.click();
         }catch (ElementNotInteractableException e){
@@ -176,12 +186,12 @@ public abstract class BasePage {
         }
     }
 
-    private void verifyYouAreOnDashboardPage(String moduleLink) {
+    public void verifyYouAreOnDashboardPage(String moduleLink) {
         if (moduleLink.equals("Lunch")) lunchWindowOKButton.click();
         BrowserUtils.waitFor(1);
     }
 
-    private void clickOnTheModuleLink(String moduleLink) {
+    public void clickOnTheModuleLink(String moduleLink) {
         String moduleLinkLocator = "//span[contains(text(),'" + moduleLink + "')]";
         WebElement moduleName = Driver.get().findElement(By.xpath(moduleLinkLocator));
         try {
@@ -194,7 +204,7 @@ public abstract class BasePage {
         }
     }
 
-    private WebElement getLocatorsOfLinks(String moduleName) {
+    public WebElement getLocatorsOfPages(String moduleName) {
         Map<String, WebElement> locatorsOfLinks= new HashMap<String, WebElement>() {{
             put("Discuss", discussPageLocator);
             put("Calendar", calendarPageLocator);
@@ -224,6 +234,49 @@ public abstract class BasePage {
             put("Email Marketing", emailMarketingPageLocator);
         }};
         return locatorsOfLinks.get(moduleName);
+    }
+
+    public void clickOnTheUsername(){
+        username.click();
+    }
+
+    public void clickOnTheDropdownItem(String dropdownItem){
+        String locator = "//a[contains(text(),'" + dropdownItem + "')]";
+        Driver.get().findElement(By.xpath(locator)).click();
+    }
+
+    public void verifyYouAreOnTheRelatedPage(String dropdownItem){
+
+        if (dropdownItem.contains("Documentation")) {
+            swtichToTheNewPage();
+            Assert.assertTrue(documentationPageLocator.isDisplayed());
+        }
+        if (dropdownItem.contains("Support")) {
+            swtichToTheNewPage();
+            Assert.assertTrue(supportPageLocator.isDisplayed());
+        }
+        if (dropdownItem.contains("Preferences")) {
+            Assert.assertTrue(preferencesPageLocator.isDisplayed());
+            preferencesPageLocator.click();
+        }
+        if (dropdownItem.contains("My Odoo.com account")) {
+            Assert.assertTrue(myOdooComAccountPageLocator.isDisplayed());
+            Driver.get().navigate().back();
+        }
+        if (dropdownItem.contains("Log out")) {
+            Assert.assertTrue(loginPageLocator.isDisplayed());
+        }
+
+    }
+
+    public void swtichToTheNewPage(){
+        String currentWindowHandle = Driver.get().getWindowHandle();
+        Set<String> windowHandles = Driver.get().getWindowHandles();
+        for (String each : windowHandles) {
+            if (!each.equals(currentWindowHandle)) {
+                Driver.get().switchTo().window(each);
+            }
+        }
     }
 
 }

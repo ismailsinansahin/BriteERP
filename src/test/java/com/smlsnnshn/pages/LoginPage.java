@@ -5,8 +5,13 @@ import com.smlsnnshn.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage{
+public class LoginPage{
+
+    public LoginPage(){
+        PageFactory.initElements(Driver.get(),this);
+    }
 
     @FindBy(id = "login")
     public WebElement usernameInput;
@@ -77,12 +82,10 @@ public class LoginPage extends BasePage{
     public void verifyWrongMessage(String expectedMessage){ Assert.assertEquals(expectedMessage,wrongMessage.getText()); }
 
     public void verifyBlankMessage(String expectedMessage, String username, String password){
-        if (username.contains("-")) {
-            Assert.assertEquals(expectedMessage,blankUsernameMessage.getAttribute("validationMessage"));
-        }
-        if (password.contains("-")) {
-            Assert.assertEquals(expectedMessage,blankPasswordMessage.getAttribute("validationMessage"));
-        }
+        String actualMessage="";
+        if (username.isBlank()) actualMessage = blankUsernameMessage.getAttribute("validationMessage");
+        if (password.isBlank()) actualMessage = blankPasswordMessage.getAttribute("validationMessage");
+        Assert.assertEquals(expectedMessage,actualMessage);
     }
 
 }

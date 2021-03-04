@@ -13,5 +13,6 @@ import org.junit.runner.RunWith;
         features =  "src/test/resources/features/",
         glue     =  "com/smlsnnshn/step_definitions",
         dryRun   = false,
-        tags     = "@Conversations")
+        tags     = "@SearchProjectWithProjectName"
+)
 public class CukesRunner{}

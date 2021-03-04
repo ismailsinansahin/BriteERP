@@ -20,7 +20,7 @@ Feature: Negative Login
     Then the user should see blank message "<Message>" "<Username>" "<Password>"
     Examples:
       | Username              | Password   | Message                     |
-      | -                     | posmanager | Please fill out this field. |
-      | posmanager16@info.com | -          | Please fill out this field. |
+      |                       | posmanager | Please fill out this field. |
+      | posmanager16@info.com |            | Please fill out this field. |
 
 
