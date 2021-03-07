@@ -39,6 +39,7 @@ public class PreferencesPage extends BasePage{
     public WebElement editButtonOnTheAvatar;
 
     public void clickOnChangePasswordLink() {
+        BrowserUtils.waitFor(2);
         changePasswordLink.click();
     }
 
@@ -48,14 +49,17 @@ public class PreferencesPage extends BasePage{
     }
 
     public void enterNewPassword(String newPassword) {
+        BrowserUtils.waitFor(1);
         newPasswordInputBox.sendKeys(newPassword);
     }
 
     public void enterNewPasswordAgain(String newPassword) {
+        BrowserUtils.waitFor(1);
         confirmNewPasswordInputBox.sendKeys(newPassword);
     }
 
     public void clickOnChangePasswordSubmitButton() {
+        BrowserUtils.waitFor(1);
         changePasswordSubmitButton.click();
     }
 
@@ -68,7 +72,7 @@ public class PreferencesPage extends BasePage{
     }
 
     public void takeScreenshotOfAvatar(String avatar) throws IOException {
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(8);
         Screenshot screenshot = new AShot().takeScreenshot(Driver.get(),avatarImage);
         String path = "C:\\Users\\A\\IdeaProjects\\BriteERP\\src\\test\\resources\\images\\" + avatar + ".png";
         File file = new File(path);
@@ -78,6 +82,7 @@ public class PreferencesPage extends BasePage{
     }
 
     public void verifyTheAvatarHasChanged() throws IOException {
+        BrowserUtils.waitFor(1);
         String oldImagePath = "C:\\Users\\A\\IdeaProjects\\BriteERP\\src\\test\\resources\\images\\old.png";
         String newImagePath = "C:\\Users\\A\\IdeaProjects\\BriteERP\\src\\test\\resources\\images\\new.png";
         BufferedImage oldImage = ImageIO.read(new File(oldImagePath));

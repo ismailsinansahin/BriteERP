@@ -9,6 +9,6 @@ Feature: Change Avatar
     And take the screenshot of "old" avatar
     And click on the username on the basepage
     And click on the "Preferences"
-    And change the avatar with new one "white"
+    And change the avatar with new one "black"
     And take the screenshot of "new" avatar
     Then verify the avatar has changed

@@ -26,13 +26,11 @@ public class SearchProjectsWithProjectNameStepDefs {
 
     @Then("verify all projects displayed on the dashboard contains search word {string}")
     public void verify_all_projects_displayed_on_the_dashboard_contains_search_word(String searchWord) {
-        BrowserUtils.waitFor(2);
         projectPage.verifyAllProjectsDisplayedOnTheDashboardContains(searchWord);
     }
 
     @Then("verify all projects contains search word are displayed {string}")
     public void verify_all_projects_contains_search_word_are_displayed(String searchWord) {
-        BrowserUtils.waitFor(2);
         projectPage.verifyAllProjectsContainsSearchWordAreDisplayed(searchWord);
     }
 

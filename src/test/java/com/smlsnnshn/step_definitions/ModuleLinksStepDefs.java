@@ -13,6 +13,7 @@ public class ModuleLinksStepDefs {
 
     @Then("the {string} should be able to go related modules")
     public void the_should_be_able_to_go_related_modules(String userType, List<String> modules) {
+        BrowserUtils.waitFor(1);
         dashboardPage.verifyModuleLinksBasedOnUserTypes(userType, modules);
     }
 
