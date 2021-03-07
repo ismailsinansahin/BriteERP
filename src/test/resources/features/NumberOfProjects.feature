@@ -4,7 +4,7 @@ Feature: Number of Projects
   Description: The purpose of this feature is to test the number of projects functionality
 
   Background: Go to Project Module
-    When the user enter valid credentials "posmanager16@info.com" "posmanager"
+    When the user enter valid credentials "posmanager26@info.com" "posmanager"
     And click on login button
     And go to "Project" module
 

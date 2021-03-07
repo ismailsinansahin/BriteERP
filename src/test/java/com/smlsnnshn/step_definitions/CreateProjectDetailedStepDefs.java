@@ -7,29 +7,19 @@ public class CreateProjectDetailedStepDefs {
 
     ProjectPage projectPage = new ProjectPage();
 
-    @When("select a customer from the customer dropdown")
-    public void select_a_customer_from_the_customer_dropdown() {
-        projectPage.selectACustomerFromCustomerDropdown();
+    @When("select a customer from the customer dropdown {string}")
+    public void select_a_customer_from_the_customer_dropdown(String customerName) {
+        projectPage.selectACustomerFromCustomerDropdown(customerName);
     }
 
     @When("click on Emails tab")
     public void click_on_Emails_tab() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        projectPage.clickOnEmailTab();
     }
 
     @When("enter an email alias {string}")
-    public void enter_an_email_alias(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void enter_an_email_alias(String emailAlias) {
+        projectPage.enterEmailAlias(emailAlias);
     }
-
-    @When("click on the Dashboard link from the left menu")
-    public void click_on_the_Dashboard_link_from_the_left_menu() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-
 
 }

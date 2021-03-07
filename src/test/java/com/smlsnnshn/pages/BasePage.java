@@ -135,17 +135,23 @@ public abstract class BasePage {
         Assert.assertEquals(expectedUsername,username.getText());
     }
 
-    public void verifyAvatarIsDisplayed(){Assert.assertTrue(avatarImage.isEnabled()); }
+    public void verifyAvatarIsDisplayed(){
+        BrowserUtils.waitFor(1);
+        Assert.assertTrue(avatarImage.isEnabled());
+    }
 
     public void verifyConversationsIsDisplayed(){
+        BrowserUtils.waitFor(1);
         Assert.assertTrue(conversations.isDisplayed());
     }
 
     public void verifyActivitiesIsDisplayed(){
+        BrowserUtils.waitFor(1);
         Assert.assertTrue(activities.isDisplayed());
     }
 
     public void verifyModuleNamesBasedOnUserTypes(List<String> modulesList){
+        BrowserUtils.waitFor(1);
         clickOnTheMoreButton();
         for (String each : getExpectedModuleList(modulesList)){
             String moduleNameLocator = "//span[contains(text(),'" + each + "')]";
@@ -154,6 +160,7 @@ public abstract class BasePage {
     }
 
     public void verifyModuleLinksBasedOnUserTypes(String userType, List<String> modulesList){
+        BrowserUtils.waitFor(1);
         for (String each : getExpectedModuleList(modulesList)) {
             clickOnTheModuleLink(each);
             if (each.equals("Website")) {
@@ -171,6 +178,7 @@ public abstract class BasePage {
     }
 
     public List<String> getExpectedModuleList(List<String> modulesList) {
+        BrowserUtils.waitFor(1);
         List<String> expectedModuleList = new ArrayList<>();
         for (String each : modulesList) {
             if (!each.equals("-")) expectedModuleList.add(each);
@@ -179,6 +187,7 @@ public abstract class BasePage {
     }
 
     public void clickOnTheMoreButton() {
+        BrowserUtils.waitFor(1);
         try {
             if (moreButton.isEnabled()) moreButton.click();
         }catch (ElementNotInteractableException e){
@@ -187,11 +196,13 @@ public abstract class BasePage {
     }
 
     public void verifyYouAreOnDashboardPage(String moduleLink) {
+        BrowserUtils.waitFor(1);
         if (moduleLink.equals("Lunch")) lunchWindowOKButton.click();
         BrowserUtils.waitFor(1);
     }
 
     public void clickOnTheModuleLink(String moduleLink) {
+        BrowserUtils.waitFor(3);
         String moduleLinkLocator = "//span[contains(text(),'" + moduleLink + "')]";
         WebElement moduleName = Driver.get().findElement(By.xpath(moduleLinkLocator));
         try {
@@ -205,6 +216,7 @@ public abstract class BasePage {
     }
 
     public WebElement getLocatorsOfPages(String moduleName) {
+        BrowserUtils.waitFor(1);
         Map<String, WebElement> locatorsOfLinks= new HashMap<String, WebElement>() {{
             put("Discuss", discussPageLocator);
             put("Calendar", calendarPageLocator);
@@ -237,16 +249,18 @@ public abstract class BasePage {
     }
 
     public void clickOnTheUsername(){
+        BrowserUtils.waitFor(3);
         username.click();
     }
 
     public void clickOnTheDropdownItem(String dropdownItem){
+        BrowserUtils.waitFor(1);
         String locator = "//a[contains(text(),'" + dropdownItem + "')]";
         Driver.get().findElement(By.xpath(locator)).click();
     }
 
     public void verifyYouAreOnTheRelatedPage(String dropdownItem){
-
+        BrowserUtils.waitFor(1);
         if (dropdownItem.contains("Documentation")) {
             swtichToTheNewPage();
             Assert.assertTrue(documentationPageLocator.isDisplayed());
@@ -266,10 +280,10 @@ public abstract class BasePage {
         if (dropdownItem.contains("Log out")) {
             Assert.assertTrue(loginPageLocator.isDisplayed());
         }
-
     }
 
     public void swtichToTheNewPage(){
+        BrowserUtils.waitFor(1);
         String currentWindowHandle = Driver.get().getWindowHandle();
         Set<String> windowHandles = Driver.get().getWindowHandles();
         for (String each : windowHandles) {

@@ -1,4 +1,4 @@
-@Dashboard @dropdown
+@Basepage @UsernameDropdown
 Feature: Username Dropdown Functionality
   Agile Story: As a user I should be able to use all links under the username dropdown
   Description: The purpose of this feature is to test the links under username dropdown on the baseoage

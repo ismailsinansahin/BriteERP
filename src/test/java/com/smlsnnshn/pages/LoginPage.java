@@ -1,5 +1,6 @@
 package com.smlsnnshn.pages;
 
+import com.smlsnnshn.utilities.BrowserUtils;
 import com.smlsnnshn.utilities.ConfigurationReader;
 import com.smlsnnshn.utilities.Driver;
 import org.junit.Assert;
@@ -32,15 +33,18 @@ public class LoginPage{
     public WebElement blankPasswordMessage;
 
     public void enterCredentials(String username,String password){
+        BrowserUtils.waitFor(1);
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
     }
 
     public void clickOnLoginButton(){
+        BrowserUtils.waitFor(1);
         loginButton.click();
     }
 
     public void loginAsA(String userType){
+        BrowserUtils.waitFor(1);
         String username, password;
         if (userType.startsWith("POS Manager")) {
             username = ConfigurationReader.get("posManagerUsername");
@@ -75,13 +79,18 @@ public class LoginPage{
     }
 
     public void verifySuccessfulLogin(){
+        BrowserUtils.waitFor(1);
         String loginPageTitle = Driver.get().getTitle();
         Assert.assertEquals("Odoo",loginPageTitle);
     }
 
-    public void verifyWrongMessage(String expectedMessage){ Assert.assertEquals(expectedMessage,wrongMessage.getText()); }
+    public void verifyWrongMessage(String expectedMessage){
+        BrowserUtils.waitFor(1);
+        Assert.assertEquals(expectedMessage,wrongMessage.getText());
+    }
 
     public void verifyBlankMessage(String expectedMessage, String username, String password){
+        BrowserUtils.waitFor(1);
         String actualMessage="";
         if (username.isBlank()) actualMessage = blankUsernameMessage.getAttribute("validationMessage");
         if (password.isBlank()) actualMessage = blankPasswordMessage.getAttribute("validationMessage");
