@@ -92,8 +92,8 @@ public class LoginPage{
     public void verifyBlankMessage(String expectedMessage, String username, String password){
         BrowserUtils.waitFor(1);
         String actualMessage="";
-        if (username.isBlank()) actualMessage = blankUsernameMessage.getAttribute("validationMessage");
-        if (password.isBlank()) actualMessage = blankPasswordMessage.getAttribute("validationMessage");
+        if (username.isEmpty()) actualMessage = blankUsernameMessage.getAttribute("validationMessage");
+        if (password.isEmpty()) actualMessage = blankPasswordMessage.getAttribute("validationMessage");
         Assert.assertEquals(expectedMessage,actualMessage);
     }
 
